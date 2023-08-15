@@ -39,9 +39,11 @@ function App() {
                   alignItems: "center",
                   paddingRight: "8px",
                   color: "white",
+                  fontSize: "12px",
                 }}
               >
-                &#8457; <img src={toggle} alt="" /> &#8451;
+                &deg;C <img src={toggle} alt="" width="30px" height="30px" />{" "}
+                &deg;F
               </span>
             </div>
           </div>

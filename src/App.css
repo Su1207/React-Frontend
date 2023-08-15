@@ -15,7 +15,7 @@
 }
 
 .left-container {
-  width: 25%;
+  width: 35%;
   background-image: url("./images/leftBackground.jpg");
   background-size: cover;
 }
@@ -119,7 +119,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 3rem;
   width: 90%;
-  margin: 0 auto 10px auto;
+  margin: 0 auto 20px auto;
 }
 
 .sub-sub-container {
