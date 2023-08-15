@@ -1,38 +1,133 @@
-.App {
+.app {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  width: 100%; /* You can adjust this value as needed */
+  /* border: 1px solid #000; */
+}
+
+.left-container {
+  width: 25%;
+  background-image: url("./images/leftBackground.jpg");
+  background-size: cover;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+
+.weather {
+  margin: 30px 20px;
+}
+
+.location {
   text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 50px;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.temperature-meter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.right-container {
   display: flex;
   flex-direction: column;
+  flex: 1;
+  background-color: rgb(203, 232, 241);
+}
+
+.right-container-heading {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.right-container-heading .profile {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 0;
+  left: 45vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dots {
+  margin-right: 20px;
+}
+
+.sub-container1 {
+  flex: 1;
+  /* border: 1px solid #000; */
+  margin: 5px;
+  padding: 10px;
+  /* background-color: lightgreen; */
+}
+
+/* .right-container p {
+  margin-left: 35px;
+} */
+
+.graphContainer {
+  width: 100% - margin;
+  height: 100%;
+  margin: 10px 20px;
+  background-color: white;
+  border-radius: 40px;
+}
+
+.graphContainer .textGraphContainer {
+  /* position: absolute; */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.textGraphContainer1 {
+  align-self: flex-start;
+}
+
+.textGraphContainer2 {
+  display: flex;
+  align-self: flex-end;
+  align-items: center;
+  /* justify-content: space-between; */
+  font-size: 14px;
+  margin-right: 20px;
+}
+
+/* lower right subcontainer */
+
+.sub-container2 {
+  /* border: 1px solid #000; */
+  /* margin:; */
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+  width: 90%;
+  margin: 0 auto 10px auto;
+}
+
+.sub-sub-container {
+  background-color: white;
+  border-radius: 40px;
+  height: 18vh;
+}
+
+.sub-sub-container p {
+  margin: 0;
 }
